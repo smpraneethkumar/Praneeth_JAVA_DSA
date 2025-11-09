@@ -17,11 +17,11 @@ public class Add_two_numbers_2_m_me {
         l2.add(6);
         l2.add(4);
 
-        int ex = 0;
+        int ex =0;
 
         for(int  i =0; i<l1.size();i++) {
 
-            for(int j =0;j<=i;j++) {
+            for(int j =i;j<=i;j++) {
 
                 int num1 = l1.get(i);
                 int num2 = l2.get(j);
@@ -30,7 +30,10 @@ public class Add_two_numbers_2_m_me {
 
                 if(sum >=10) {
 
-                    ex = sum -10;
+                    int sub = 9;
+                  ex = sum -sub;
+//                 System.out.println(d);
+//                    ex = Math.min(ex,sum);
                 }
 
                 ans.add(sum);
@@ -39,5 +42,11 @@ public class Add_two_numbers_2_m_me {
         }
 
         System.out.println(ans);
+
+//        boolean t =l1.size() || l2.size() ;
+//        if(t == true ){
+//
+//            System.out.println("sfdsdffsdf");
+//        }
     }
 }
