@@ -1,42 +1,45 @@
 package LeetCode_Questions;
 
+import java.util.Arrays;
+
 public class Longest_Common_Prefix_14_me {
     public static void main(String[] args) {
 
         String strs[] = {"flower","flow","fligth"};
 
-//        int n = 0;
-//        String word1 = strs[n];
-//        String word2 = strs[n+1];
-//
-//        while (word1 && word2){
-//
-//
-//
-//        }
+      System.out.println(  longestCommonPrefix(strs));
 
-        StringBuilder ans = new StringBuilder();
 
-        for(int i =0;i<strs.length;i++){
 
-            String word1 = strs[i];
-            // int num =i+1;
-            // for(int j =0;j<word1.length();j++){
-//
-//            for (int j =1;j)
-            String word2 = strs[1+i];
 
-            if(word1.charAt(i) == word2.charAt(i)){
 
-                ans.append(word1.charAt(i));
+
+    }
+    public static String longestCommonPrefix(String[] strs) {
+
+        String ans = "";
+
+        Arrays.sort(strs);
+
+        String word1 = strs[0];
+        String word2 = strs[strs.length -1];
+
+        int i =0;
+
+        while(i<word1.length()){
+
+            if(word1.charAt(i)==word2.charAt(i)){
+                i++;
+                // ans = ans+word1.charAt(i);
             }
             else{
-                ans = new StringBuilder();
+                // return " ";
+                break;
             }
+
+
         }
-        System.out.println(ans);
 
-
-
+        return i==0? "":word1.substring(0,i);
     }
 }
