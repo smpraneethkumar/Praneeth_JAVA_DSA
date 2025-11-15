@@ -10,8 +10,9 @@ public class Goal_Parser_Interpretation_1678_KK {
 //            int a =1;
         int n = command.length();
         String ans ="";
-        for(int i =0;i<n-1;i++){
-
+//        for(int i =0;i<=n;i++){
+            int i =0;
+                while(i<n-1){
             char ch1 = command.charAt(i);
             char ch2 = command.charAt(i+1);
 
@@ -27,6 +28,7 @@ public class Goal_Parser_Interpretation_1678_KK {
                 ans += "al";
                 continue;
             }
+            i++;
         }
 
         System.out.println(ans);
