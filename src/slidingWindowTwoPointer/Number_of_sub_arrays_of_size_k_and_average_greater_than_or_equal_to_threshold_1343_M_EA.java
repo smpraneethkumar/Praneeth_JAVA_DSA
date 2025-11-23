@@ -27,6 +27,7 @@ public class Number_of_sub_arrays_of_size_k_and_average_greater_than_or_equal_to
                 l++;
             }
             if(i-l+1 == k){
+
                 if(temp/k>=threshold){
                     ans++;
                 }
