@@ -14,16 +14,12 @@ public class Q2_Shuffle_the_Array {
 
         int len= nums.length;
         int  [] ans = new int[len];
-        int [] x = new int[n];
-        int [] y = new int[n];
-        for(int i =0;i<n;i++){
 
-            x[i] = nums[i];
-            y[i] = nums[n+i];
-        }
-        for(int j =0;j<n;j++){
-            ans[j+j] = x[j];
-            ans[j+1] = y[j];
+        int count = 0;
+        for(int i =0;i<n;i++){
+            ans[count] = nums[i];
+            ans[count+1] = nums[i+n];
+            count+=2;
         }
 
         return ans;
