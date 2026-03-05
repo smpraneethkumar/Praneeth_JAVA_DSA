@@ -58,6 +58,7 @@ public class Find {
         if (arr[index] == target) {
             list.add(index);
         }
+
         findAllIndex(arr, target, index + 1);
     }
 
