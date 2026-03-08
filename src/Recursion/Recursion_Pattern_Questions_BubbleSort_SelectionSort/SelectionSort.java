@@ -1,4 +1,4 @@
-package Recursion_Pattern_Questions_BubbleSort_SelectionSort;
+package Recursion.Recursion_Pattern_Questions_BubbleSort_SelectionSort;
 
 import java.util.Arrays;
 

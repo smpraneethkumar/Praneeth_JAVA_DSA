@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.easy;
 
 public class Print_numberse {
     public static void main(String[] args) {
