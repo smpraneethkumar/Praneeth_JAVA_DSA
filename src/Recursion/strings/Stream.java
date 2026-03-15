@@ -3,7 +3,7 @@ package Recursion.strings;
 public class Stream {
     public static void main(String[] args) {
 
-        String up = "baccabh";
+        String up = "abccda";
         String p ="";
         skip(p,up);
 
